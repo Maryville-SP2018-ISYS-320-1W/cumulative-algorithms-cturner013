@@ -6,7 +6,7 @@
 
 /*
 3. What problems did you identify in the sumTo method below?
-
+there is not max set. Shouldn't it be a void set? on the second half
 
 */
 
@@ -23,6 +23,7 @@ public class P3_FixTheSumTo {
 	        int sum = 0; 
 	        sum += i;
 	    }
+		return n;
 	}
 
 }
