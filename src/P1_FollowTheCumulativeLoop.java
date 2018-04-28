@@ -11,13 +11,16 @@ import java.util.Scanner;
 4 3 5 2 6
 
 	| ITERATION 		 | VARIABLE NAME	 | VARIABLE NAME	 | VARIABLE NAME	 |
-	| initialization	 |				 |				 |				 | 
-	| 1				 |		4-1		 |		3-1		 |		5-1		 |
+	| initialization	 |		1		 |		4		 |				 | 
+	| 				 |		2    	 |		3		 |		      	 |
+						  3					5
+						  4				    2
+						  5					6
 */
 
 /*
 2. What is does this algorithm accomplish? (i.e., what does it compute or find?)
-It's ratios
+The lowest value integer
 
 */
 
@@ -30,7 +33,7 @@ public class P1_FollowTheCumulativeLoop {
 		for( int numberIndex = 1; numberIndex <= 5; numberIndex++ ) {
 			
 			// Enter the values in this order: 4 3 5 2 6
-			System.out.print("5 " + numberIndex + ": ");
+			System.out.print("Enter number " + numberIndex + ": ");
 			int nextInputValue = input.nextInt();
 			
 			if( nextInputValue < accumulatorVariable ) {

@@ -6,7 +6,7 @@
 
 /*
 3. What problems did you identify in the sumTo method below?
-there is not max set. Shouldn't it be a void set? on the second half
+There needs to be a return statement added outside of the loop. 
 
 */
 
@@ -19,11 +19,11 @@ public class P3_FixTheSumTo {
 	}
 	
 	public static int sumTo(int n) { 
+	    int sum = 0; 
 	    for (int i = 1; i <= n; i++) {
-	        int sum = 0; 
 	        sum += i;
 	    }
-		return n;
+		return sum;
 	}
 
 }
